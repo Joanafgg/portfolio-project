@@ -1,0 +1,28 @@
+/** @format */
+
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(177, 173, 219) 11.2%,
+    rgb(245, 226, 226) 91.1%
+  );
+}
+
+h1 {
+  font-family: "Georama", sans-serif;
+  font-weight: bold;
+  font-size: 96px;
+}
+
+h2,
+h3 {
+  font-family: "Martel", serif;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
