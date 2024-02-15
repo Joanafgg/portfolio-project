@@ -73,23 +73,27 @@ p {
 }
 
 .about-section h2 {
-  font-size: 20px;
+  font-size: 25px;
   font-family: var(--heading-font-family);
   color: #222831;
   font-weight: bold;
 }
-
+.about-section h3 {
+  font-size: 40px;
+  opacity: 85%
+}
 .about-section img {
   border: 20px solid var(--secondary-color);
 }
 
 .about-section p {
-    color: rgb(57, 52, 52);
-
+  color: rgb(57, 52, 52);
 }
 .about-section-content {
   margin: 30px;
   text-align: center;
+    border-top: 2px solid var(--secondary-color);
+
 }
 
 .btn-branding {
