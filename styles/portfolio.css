@@ -34,7 +34,7 @@ p {
 }
 
 .main-section {
-  border-bottom: 2px solid #ebd5d5;
+  border-bottom: 2px solid var(--secondary-color);
 }
 .weather-image,
 .world-clock-image,
@@ -84,7 +84,6 @@ p {
 }
 
 .about-section p {
-  font-size: 20px;
     color: rgb(57, 52, 52);
 
 }
