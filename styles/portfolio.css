@@ -64,6 +64,35 @@ p {
   color: #222831;
 }
 
+.about-section {
+  padding: 160px 20px;
+}
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-section h2 {
+  font-size: 20px;
+  font-family: var(--heading-font-family);
+  color: #222831;
+  font-weight: bold;
+}
+
+.about-section img {
+  border: 20px solid var(--secondary-color);
+}
+
+.about-section p {
+  font-size: 20px;
+    color: rgb(57, 52, 52);
+
+}
+.about-section-content {
+  margin: 30px;
+  text-align: center;
+}
+
 .btn-branding {
   background: var(--branding-color);
   border-radius: 4px;
@@ -118,5 +147,9 @@ p {
   .btn-branding-outline {
     display: block;
     margin: 0 20px;
+  }
+  .about-section {
+    text-align: center;
+    padding: 0;
   }
 }
