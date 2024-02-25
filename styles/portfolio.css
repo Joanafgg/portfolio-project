@@ -200,7 +200,7 @@ footer .contact-box p {
 footer .email-link {
   text-decoration: none;
   color: black;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   font-family: var(--heading-font-family);
 }
