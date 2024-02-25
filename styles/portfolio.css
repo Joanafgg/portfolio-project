@@ -198,6 +198,7 @@ nav li.active a {
 
 .btn-branding:hover {
   color: var(--heading-color);
+  background: var(--branding-color);
 }
 
 .btn-branding-outline {
@@ -209,6 +210,7 @@ nav li.active a {
 .btn-branding-outline:hover {
   border: 1px solid var(--branding-color);
   color: var(--secondary-color);
+  background: var(--branding-color);
 }
 
 .btn .btn-branding,
@@ -219,10 +221,6 @@ nav li.active a {
   transition: all 150ms ease-in-out;
 }
 
-.btn .btn-branding:hover,
-.btn .btn-branding-outline:hover {
-  background: var(--branding-color);
-}
 
 .project-description {
   padding: 120px 60px;
