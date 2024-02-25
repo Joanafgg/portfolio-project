@@ -2,8 +2,12 @@
 :root {
   --branding-color: #c15555;
   --secondary-color: #fcdddd;
+  --heading-color: #685454;
+  --main-color: #222831;
+  --alternative-color: rgb(57, 52, 52);
   --heading-font-family: "Georama", sans-serif;
   --default-font-family: "Martel", serif;
+  --secondary-font-family: monospace;
 }
 body {
   font-family: var(--default-font-family);
@@ -11,12 +15,10 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   font-family: var(--heading-font-family);
   font-weight: bold;
-  color: #685454;
+  color: var(--heading-color);
 }
 
 h1 {
@@ -34,7 +36,7 @@ h3 {
 p {
   font-size: 18px;
   line-height: 1.5;
-  font-family: monospace;
+  font-family: var(--secondary-font-family);
 }
 
 nav {
@@ -54,7 +56,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: rgb(57, 52, 52);
+  color: var(--alternative-color);
   font-weight: bold;
   transition: all 100ms ease-in-out;
 }
@@ -71,12 +73,54 @@ nav li.active a {
 .main-section {
   border-bottom: 2px solid var(--secondary-color);
 }
+.portfolio-image {
+  border: 3px solid var(--secondary-color);
+}
+
+.weather-image {
+  border: 3px solid #4488bb;
+}
+.pilates-image {
+  border: 3px solid purple;
+}
+
+.catsitting-image {
+  border: 3px solid var(--branding-color);
+}
+
+.world-clock-image {
+  border: 3px solid #eba271;
+}
+
+.catsitting-image,
 .weather-image,
 .world-clock-image,
-.portfolio-image,
-.pilates-image {
-  border: 3px solid var(--secondary-color);
-  padding: 30px;
+.pilates-image,
+.portfolio-image {
+  transition: all 150ms ease-in-out;
+  padding: 10px;
+}
+
+.catsitting-image:hover,
+.weather-image:hover,
+.world-clock-image:hover,
+.pilates-image:hover,
+.portfolio-image:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.work-title,
+.contact-title {
+  font-size: 60px;
+  color: var(--alternative-color);
+  font-family: var(--secondary-font-family);
+}
+
+.work-title,
+.contact-title, .hero, .content, .project-description {
+ text-align: center;
+
 }
 
 .hero {
@@ -85,24 +129,26 @@ nav li.active a {
     rgb(247, 247, 247) 23.8%,
     rgb(252, 221, 221) 92%
   );
-  text-align: center;
   padding: 130px 20px;
 }
 
 .hero p {
   font-size: 40px;
-  font-weight: bold;
   margin: 0;
-  color: rgb(57, 52, 52);
-  font-family: monospace;
+  color: var(--alternative-color);
+  font-family: var(--secondary-font-family);
 }
 
 .hero h2 {
   font-family: var(--heading-font-family);
-  font-weight: bold;
   font-size: 22px;
   line-height: 1.5;
-  color: #222831;
+  color: var(--main-color);
+}
+
+.hero p,
+.hero h2, .content-container h2 {
+  font-weight: bold;
 }
 
 .content-container {
@@ -115,64 +161,71 @@ nav li.active a {
 
 .content-container h2 {
   font-size: 25px;
-  font-family: var(--heading-font-family);
-  color: #222831;
-  font-weight: bold;
 }
 .content-container h3 {
   font-size: 40px;
-  color: var(--branding-color);
-  font-family: monospace;
+  font-family: var(--secondary-font-family);
 }
-.content-container img {
-  border: 3px solid var(--secondary-color);
 
-  padding: 20px;
+.content-container h4 {
+  font-size: 48px;
+}
+
+.content-container h2,
+.content-container h3 {
+  color: var(--main-color);
 }
 
 .content-container p {
-  color: rgb(57, 52, 52);
+  color: var(--alternative-color);
 }
+
 .content {
   margin: 30px;
-  text-align: center;
+}
+
+.content, .footer-section {
   border-top: 2px solid var(--secondary-color);
+
 }
 
 .btn-branding {
   background: var(--branding-color);
-  border-radius: 4px;
   color: var(--secondary-color);
   font-size: 20px;
-  line-height: 30px;
   padding: 15px 35px;
-  font-weight: bold;
-  transition: all 300ms ease-in-out;
 }
 
 .btn-branding:hover {
-  color: #685454;
-  background: var(--branding-color);
+  color: var(--heading-color);
 }
 
 .btn-branding-outline {
-  border-radius: 4px;
   border: 1px solid var(--branding-color);
   color: var(--branding-color);
   font-size: 18px;
-  line-height: 30px;
   padding: 10px 30px;
-  font-weight: bold;
-  transition: all 300ms ease-in-out;
 }
 .btn-branding-outline:hover {
   border: 1px solid var(--branding-color);
   color: var(--secondary-color);
-  background: #c15555;
 }
+
+.btn .btn-branding,
+.btn .btn-branding-outline, .contacts {
+  border-radius: 4px;
+  line-height: 30px;
+  font-weight: bold;
+  transition: all 150ms ease-in-out;
+}
+
+.btn .btn-branding:hover,
+.btn .btn-branding-outline:hover {
+  background: var(--branding-color);
+}
+
 .project-description {
   padding: 120px 60px;
-  text-align: center;
 }
 
 .arrow-down {
@@ -199,7 +252,7 @@ footer .contact-box p {
 
 footer .email-link {
   text-decoration: none;
-  color: black;
+  color: var(--main-color);
   font-size: 20px;
   font-weight: bold;
   font-family: var(--heading-font-family);
@@ -210,33 +263,43 @@ footer .email-link:hover {
 }
 
 footer .social-links a {
-margin: 0 20px;
-background-color: var(--secondary-color);
-padding: 10px 14px;
-font-size: 20px;
-color: #685454;
-border-radius: 80%;
-transition: all 100ms ease-in-out;
+  margin: 0 20px;
+  background-color: var(--secondary-color);
+  padding: 10px 14px;
+  font-size: 20px;
+  color: var(--heading-color);
+  border-radius: 80%;
+  transition: all 100ms ease-in-out;
 }
 
 footer .social-links a:hover {
   background-color: var(--branding-color);
   color: var(--secondary-color);
-
 }
 
-.footer-section {
-    border-top: 2px solid var(--secondary-color);
 
-}
-
-.email-footer{
+.email-footer {
   text-decoration: none;
-  color: #685454;
+  color: var(--heading-color);
+}
+
+.email-emoji {
+  font-size: 30px;
 }
 
 .email-footer:hover {
-color: var(--branding-color);
+  color: var(--branding-color);
+}
+
+.contacts {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contacts:hover {
+  color: var(--branding-color);
 }
 
 @media (max-width: 900px) {
@@ -253,7 +316,7 @@ color: var(--branding-color);
   .hero {
     padding: 80px 20px;
   }
-  .project-description {
+  .project-description, .about-section {
     text-align: center;
     padding: 0;
   }
@@ -261,8 +324,5 @@ color: var(--branding-color);
     display: block;
     margin: 0 20px;
   }
-  .about-section {
-    text-align: center;
-    padding: 0;
-  }
+ 
 }
