@@ -304,6 +304,20 @@ footer .social-links a:hover {
   color: var(--branding-color);
 }
 
+.footer-section {
+  font-size: 16px;
+  font-family: var(--heading-font-family);
+}
+
+.profile-footer {
+  text-decoration: none;
+  color: var(--branding-color);
+}
+
+.profile-footer:hover {
+  color: var(--heading-color);
+}
+
 @media (max-width: 900px) {
   nav a {
     font-size: 12px;
@@ -333,6 +347,10 @@ footer .social-links a:hover {
   }
 
   .content-container h4 {
-    font-size: 22px;
+    font-size: 28px;
+  }
+
+  .content h3 {
+    font-size: 24px;
   }
 }
