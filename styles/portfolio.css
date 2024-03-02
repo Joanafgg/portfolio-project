@@ -332,6 +332,10 @@ footer .social-links a:hover {
   .hero {
     padding: 80px 20px;
   }
+  .hero p {
+    font-size: 20px;
+  }
+
   .project-description,
   .about-section {
     text-align: center;
