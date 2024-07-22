@@ -2,7 +2,7 @@
 :root {
   --branding-color: #c15555;
   --secondary-color: #fcdddd;
-  --heading-color: #685454;
+  --heading-color: #7c797b;
   --main-color: #222831;
   --alternative-color: rgb(57, 52, 52);
   --heading-font-family: "Georama", sans-serif;
@@ -26,11 +26,11 @@ h1 {
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 32px;
 }
 
 p {
@@ -71,41 +71,48 @@ nav li.active a {
 }
 
 .main-section {
-  border-bottom: 2px solid var(--secondary-color);
+  border-top: 2px solid var(--secondary-color);
 }
-.portfolio-image {
-  border: 3px solid var(--secondary-color);
+.dictionary-app-image {
+  border: 3px solid #C86B85;
 }
 
 .weather-image {
   border: 3px solid #4488bb;
 }
-.pilates-image {
-  border: 3px solid purple;
+.recipe-image {
+  border: 3px solid #B9201B;
 }
 
-.catsitting-image {
-  border: 3px solid var(--branding-color);
+.weather-app-image {
+  border: 3px solid #083A59;
 }
 
 .world-clock-image {
   border: 3px solid #eba271;
 }
 
-.catsitting-image,
+.tokyo-project-image {
+ border: 3px solid #3493A9;
+}
+
 .weather-image,
 .world-clock-image,
-.pilates-image,
-.portfolio-image {
+.recipe-image,
+.dictionary-app-image,
+.weather-app-image,
+.tokyo-project-image
+ {
   transition: all 150ms ease-in-out;
   padding: 10px;
 }
 
-.catsitting-image:hover,
+.weather-app-image:hover,
 .weather-image:hover,
 .world-clock-image:hover,
-.pilates-image:hover,
-.portfolio-image:hover {
+.recipe-image:hover,
+.dictionary-app-image:hover,
+.tokyo-project-image:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -158,20 +165,20 @@ nav li.active a {
   padding: 60px 20px;
 }
 .content-container h1 {
-  font-size: 64px;
+  font-size: 45px;
   line-height: 80px;
 }
 
 .content-container h2 {
-  font-size: 25px;
+  font-size: 32px;
 }
 .content-container h3 {
-  font-size: 40px;
+  font-size: 30px;
   font-family: var(--secondary-font-family);
 }
 
 .content-container h4 {
-  font-size: 48px;
+  font-size: 28px;
 }
 
 .content-container h2,
